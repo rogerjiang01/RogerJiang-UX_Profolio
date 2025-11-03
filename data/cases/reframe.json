@@ -1,0 +1,12 @@
+{
+    "slug": "reframe",
+    "title": "Reframe — 一站式健身飲食控制整合App",
+    "role": "UX Team Lead",
+    "duration": "2 months",
+    "summary": "為重視健康與體態者設計一款一站式整合App，讓健身與飲食控制更直覺、更能持續下去。",
+    "heroImage": "/public/images/reframe-hero.jpg",
+    "sections": [
+        { "type": "problem", "title": "問題", "content": "..." },
+        { "type": "method", "title": "研究方法", "content": "..." }
+    ]
+}
