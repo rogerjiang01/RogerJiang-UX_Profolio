@@ -1,20 +1,27 @@
-<script setup>
-    import data from "~/data/cases/reframe.json";
-</script>
-
 <template>
-    <CaseHero :title="data.title" :img="data.heroImage" />
-    <CaseContent :sections="data.sections" />
+    <div class="page-reframe">
+        <!-- Header 已在 default layout 中提供 -->
+        <case-hero />
 
-    <div class="container py-5">
-        <h2>主要 UX 研究案例</h2>
-        <p>簡短介紹與關鍵洞察。</p>
+        <problem-section />
 
-        <!-- 如果你要嵌入 Figma prototype -->
-        <div class="ratio ratio-16x9 my-4">
-            <iframe src="https://www.figma.com/embed?embed_host=share&url=你的-figma-分享連結" allowfullscreen></iframe>
-        </div>
+        <research-section />
 
-        <p>更多內容（流程、方法、結果、後續）...</p>
+        <design-section />
+
+        <final-section />
+        <!-- Footer 已在 default layout 中提供 -->
     </div>
 </template>
+
+<script setup>
+    import CaseHero from "~/components/caseHero.vue";
+    import ProblemSection from "~/components/ProblemSection.vue";
+    import ResearchSection from "~/components/ResearchSection.vue";
+    import DesignSection from "~/components/DesignSection.vue";
+    import FinalSection from "~/components/FinalSection.vue";
+
+    definePageMeta({
+        // 你可以在這加入 meta 等
+    });
+</script>

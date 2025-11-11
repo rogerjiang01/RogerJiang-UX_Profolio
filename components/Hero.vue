@@ -1,38 +1,48 @@
 <template>
-    <section class="hero">
+    <section id="Hero">
         <div class="hero-content container">
             <div class="intro">
                 <div class="intro-heading">
                     <h1 class="name">Roger Jiang</h1>
-                    <p class="title">UX Designer</p>
+                    <h4 class="title">UX Designer</h4>
                 </div>
 
                 <div class="intro-description">
                     <p class="project-text">
                         <span>近期參與</span>
-                        <span class="project-bold">Reframe</span>
+                        <span class="project-bold">
+                            <a href="#">Reframe</a>
+                        </span>
                         <span>一站式健身飲食平台設計專案。</span>
                     </p>
                     <p class="project-text">
                         <span>過去有</span>
-                        <span class="project-bold">StreetSnap</span>
+                        <span class="project-bold">
+                            <a href="#">StreetSnap</a>
+                        </span>
                         、
-                        <span class="project-bold">蒔在菜單</span>
+                        <span class="project-bold">
+                            <a href="#">Interior切版練習</a>
+                        </span>
                         與
-                        <span class="project-bold">海報設計</span>
+                        <span class="project-bold">
+                            <a href="#">蒔在菜單設計</a>
+                        </span>
                         。
                     </p>
                 </div>
 
                 <div class="about-section">
-                    <p class="about-text">我喜歡從人與環境的互動中尋找設計的意義，設計出能真實地回應使用者生活的作品。 👉</p>
-                    <a href="#about" class="about-link">關於我</a>
+                    <p class="about-text">
+                        我喜歡從人與環境的互動中尋找設計的意義，設計出能真實地回應使用者生活的作品。 👉
+                        <a href="#about" class="about-link">關於我</a>
+                    </p>
                 </div>
 
                 <div class="social-links">
-                    <a href="#" class="social-icon" aria-label="LinkedIn" v-html="linkedinSvg"></a>
-                    <a href="#" class="social-icon" aria-label="Behance" v-html="behanceSvg"></a>
-                    <a href="#" class="social-icon" aria-label="Instagram" v-html="instagramSvg"></a>
+                    <a href="https://www.linkedin.com/in/rogerjiang-uxdesigner" class="social-icon" aria-label="LinkedIn" v-html="linkedinSvg" target="_blank" rel="noopener noreferrer"></a>
+                    <a href="http://www.behance.net/rogerjiang-uxer" class="social-icon" aria-label="Behance" v-html="behanceSvg" target="_blank" rel="noopener noreferrer"></a>
+                    <a href="https://www.instagram.com/rogerjiang01?igsh=MWI1eTNuZW83cmd6aA%3D%3D&utm_source=qr" class="social-icon" aria-label="Instagram" v-html="instagramSvg" target="_blank" rel="noopener noreferrer"></a>
                 </div>
             </div>
 
@@ -43,11 +53,10 @@
                     </div>
                 </div>
 
-                <div class="logo-overlay">
-                    <!-- small overlay svg (paste your svg paths if want) -->
-                    <svg viewBox="0 0 93 93" xmlns="http://www.w3.org/2000/svg" aria-hidden>
-                        <!-- paste your overlay svg paths here -->
-                    </svg>
+                <div class="portrait-decoration">
+                    <div class="logo-overlay">
+                        <img src="/public/images/LOGO2.svg" alt="" />
+                    </div>
                 </div>
             </div>
         </div>
@@ -68,3 +77,175 @@
                         </svg>`);
     // Replace "..." with the actual path content from your HTML icons (or keep links)
 </script>
+
+<style scoped>
+    #Hero {
+        height: 80vh;
+    }
+
+    .hero-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+    }
+
+    .intro {
+        width: 52%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .intro span,
+    .intro p {
+        font-family: var(--ff-sans);
+        font-size: var(--tw-p-size);
+        font-style: normal;
+        font-weight: var(--tw-p-weight);
+        line-height: var(--tw-p-lineheight);
+    }
+
+    .intro .title {
+        margin: 16px 0;
+        color: var(--gray-800);
+        font-family: "Open Sans";
+        font-weight: 300;
+    }
+
+    .intro .project-bold a,
+    .intro .about-text a {
+        color: var(--main-700);
+        text-decoration: none;
+        font-weight: 600;
+        padding: 2px 4px;
+    }
+
+    .portrait-container {
+        position: relative;
+    }
+
+    .portrait-frame {
+        width: calc(320px + 92px);
+    }
+
+    .portrait-image {
+        width: 320px;
+        border-radius: 16px;
+        overflow: hidden;
+    }
+
+    .portrait-image img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .portrait-decoration {
+        position: absolute;
+        left: 92px;
+        bottom: -43px;
+        width: 320px;
+        height: 422px;
+        aspect-ratio: 320/422;
+        border-radius: var(--Radius-corner-radius-16, 16px);
+        border: 3px solid var(--main-500);
+        z-index: -1;
+    }
+
+    .logo-overlay {
+        position: absolute;
+        width: 93px;
+        height: 93px;
+        aspect-ratio: 1;
+        right: 0px;
+        bottom: 0px;
+    }
+
+    @media (max-width: 1200px) {
+        .hero-content {
+            gap: 40px;
+        }
+        .portrait-frame {
+            width: calc(240px + 80px);
+        }
+        .portrait-image {
+            width: 240px;
+        }
+        .portrait-decoration {
+            left: 80px;
+            bottom: -32px;
+            width: 240px;
+            height: auto;
+            /* aspect-ratio: 220 / 290; */
+            border-width: 2px;
+        }
+        .logo-overlay {
+            width: 70px;
+            height: 70px;
+        }
+        .logo-overlay img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    @media (max-width: 768px) {
+        #Hero {
+            height: auto;
+            padding: 80px 0;
+        }
+
+        .hero-content {
+            flex-direction: column;
+            gap: 32px;
+            align-items: center;
+        }
+
+        .intro {
+            width: 100%;
+            gap: 8px;
+        }
+
+        .social-links {
+            position: absolute;
+            visibility: hidden;
+        }
+
+        .portrait-frame {
+            width: 320px;
+        }
+
+        .portrait-image {
+            width: 270px;
+            border-radius: 12px;
+        }
+
+        .portrait-decoration {
+            left: 56px;
+            bottom: -32px;
+            width: 270px;
+            height: auto;
+            /* aspect-ratio: 220 / 290; */
+            border-width: 2px;
+            border-radius: 12px;
+        }
+
+        .portrait-container {
+            margin-top: 24px;
+            margin-bottom: 24px;
+        }
+
+        .portrait-decoration .logo-overlay {
+            width: 64px;
+            height: 64px;
+            right: 0px;
+            bottom: 0px;
+        }
+        .logo-overlay img {
+            width: 64px;
+            height: 64px;
+        }
+    }
+</style>
