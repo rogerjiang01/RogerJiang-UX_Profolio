@@ -53,7 +53,7 @@
         width: 100%;
         height: auto;
         display: block;
-        animation: heroZoom 40s ease-in-out infinite alternate;
+        animation: heroZoom 40s ease-out infinite alternate;
     }
 
     @keyframes heroZoom {

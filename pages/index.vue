@@ -10,9 +10,9 @@
 
                 <ProjectCard title="StreetSnap" description="為街頭攝影設計一款概念App，讓街拍擁有前所未有的新體驗。" image="/images/StreetSnap_cover-final.png" variant="reverse" link="/streetsnap" />
 
-                <ProjectCard title="Interior—切版練習" description="使用HTML, CSS3進行網站切版練習。" image="/images/interior.png" />
+                <ProjectCard title="Interior—切版練習" description="使用HTML, CSS3進行網站切版練習。" image="/images/interior.png" link="/interior" />
 
-                <ProjectCard title="蒔在—咖啡廳菜單" description="為一間台南的新開幕咖啡廳設計一份屬於他們的菜單。" image="/images/cafe-menu.jpg" variant="reverse" />
+                <ProjectCard title="蒔在—咖啡廳菜單" description="為一間台南的新開幕咖啡廳設計一份屬於他們的菜單。" image="/images/cafe-menu.jpg" variant="reverse" link="/cafe_menu" />
             </div>
         </section>
     </div>

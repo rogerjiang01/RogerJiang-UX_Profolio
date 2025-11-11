@@ -5,7 +5,7 @@
 
         <div class="link-togo">
             <!-- external link 開新分頁 -->
-            <a href="https://rogerjiang01.github.io/streetsnap/" target="_blank" rel="noopener noreferrer">前往 StreetSnap 查看作品</a>
+            <a href="https://rogerjiang-portfolio-ux.webflow.io/project/coffee-shop-menu-design" target="_blank" rel="noopener noreferrer">前往 蒔在咖啡-菜單設計 查看作品</a>
         </div>
     </div>
 </template>

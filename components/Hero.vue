@@ -11,22 +11,22 @@
                     <p class="project-text">
                         <span>近期參與</span>
                         <span class="project-bold">
-                            <a href="#">Reframe</a>
+                            <NuxtLink class="case-link" to="/reframe">Reframe</NuxtLink>
                         </span>
                         <span>一站式健身飲食平台設計專案。</span>
                     </p>
                     <p class="project-text">
                         <span>過去有</span>
                         <span class="project-bold">
-                            <a href="#">StreetSnap</a>
+                            <NuxtLink class="case-link" to="/streetsnap">StreetSnap</NuxtLink>
                         </span>
                         、
                         <span class="project-bold">
-                            <a href="#">Interior切版練習</a>
+                            <NuxtLink class="case-link" to="/interior">Interior切版練習</NuxtLink>
                         </span>
                         與
                         <span class="project-bold">
-                            <a href="#">蒔在菜單設計</a>
+                            <NuxtLink class="case-link" to="/cafe_menu">蒔在菜單設計</NuxtLink>
                         </span>
                         。
                     </p>
@@ -35,7 +35,7 @@
                 <div class="about-section">
                     <p class="about-text">
                         我喜歡從人與環境的互動中尋找設計的意義，設計出能真實地回應使用者生活的作品。 👉
-                        <a href="#about" class="about-link">關於我</a>
+                        <NuxtLink class="about-link" to="/about">關於我</NuxtLink>
                     </p>
                 </div>
 
@@ -114,8 +114,8 @@
         font-weight: 300;
     }
 
-    .intro .project-bold a,
-    .intro .about-text a {
+    .intro .project-bold .case-link,
+    .intro .about-text .about-link {
         color: var(--main-700);
         text-decoration: none;
         font-weight: 600;

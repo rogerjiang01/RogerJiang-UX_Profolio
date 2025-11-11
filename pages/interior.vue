@@ -5,7 +5,7 @@
 
         <div class="link-togo">
             <!-- external link 開新分頁 -->
-            <a href="https://rogerjiang01.github.io/streetsnap/" target="_blank" rel="noopener noreferrer">前往 StreetSnap 查看作品</a>
+            <a href="https://rogerjiang01.github.io/interior/index-all.html" target="_blank" rel="noopener noreferrer">前往 Interior 查看作品</a>
         </div>
     </div>
 </template>
