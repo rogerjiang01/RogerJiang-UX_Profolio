@@ -7,7 +7,7 @@
         <div class="project-info">
             <h3 class="project-title">{{ title }}</h3>
             <p class="project-description">{{ description }}</p>
-            <NuxtLink :to="link" class="learn-more-btn">Learn More</NuxtLink>
+            <NuxtLink :to="link" class="learn-more-btn" @click="trackLearnMore">Learn More</NuxtLink>
         </div>
     </div>
 </template>
@@ -25,6 +25,14 @@
     });
 
     const variantClass = computed(() => (props.variant === "reverse" ? "project-card-reverse" : ""));
+
+    const trackLearnMore = () => {
+        // 你可以用 title 當識別，也可以改用 props.gaId
+        useTrackEvent("select_content", {
+            content_type: "project_card",
+            item_id: props.title, // 或 'reframe' / 'streetsnap' 之類
+        });
+    };
 </script>
 
 <style scoped>

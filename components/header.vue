@@ -20,7 +20,7 @@
 
                         <!-- ✅ About：導向 about.vue -->
                         <li class="nav-item">
-                            <NuxtLink class="nav-link pe-0" to="/about">About</NuxtLink>
+                            <NuxtLink @click="trackAboutClick" class="nav-link pe-0" to="/about">About</NuxtLink>
                         </li>
                     </ul>
                 </div>
@@ -110,6 +110,13 @@
             linkClickHandlers = [];
         }
     });
+
+    const trackAboutClick = () => {
+        useTrackEvent("select_content", {
+            content_type: "about_link",
+            item_id: "about_page",
+        });
+    };
 </script>
 
 <style scoped>

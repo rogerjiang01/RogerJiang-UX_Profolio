@@ -23,14 +23,21 @@
                 <p class="about-description">我持續在設計與技術之間求平衡，期望以人為本的思維，創造直覺、愉悅且有共鳴的使用體驗。</p>
 
                 <div class="resume">
-                    <a href="https://drive.google.com/file/d/1RPlexMN2w-G25pWIpVSZt7A8I964AdHD/view?usp=sharing" class="resume-btn" target="_blank" rel="noopener noreferrer">Roger's resume</a>
+                    <a href="https://drive.google.com/file/d/1U_of41SUweDr3hmlYyZM8kQNqSzU8-di/view?usp=sharing" class="resume-btn" target="_blank" rel="noopener noreferrer" @click="trackResumeClick">Roger's resume</a>
                 </div>
             </div>
         </div>
     </section>
 </template>
 
-<script setup></script>
+<script setup>
+    const trackResumeClick = () => {
+        useTrackEvent("select_content", {
+            content_type: "resume_link",
+            item_id: "roger_resume",
+        });
+    };
+</script>
 
 <style scoped>
     .about-container {
@@ -43,6 +50,7 @@
 
     .about-img img {
         width: 360px;
+        border-radius: 8px;
     }
 
     .about-text {
