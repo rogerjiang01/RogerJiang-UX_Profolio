@@ -23,7 +23,7 @@
                 <p class="about-description">我持續在設計與技術之間求平衡，期望以人為本的思維，創造直覺、愉悅且有共鳴的使用體驗。</p>
 
                 <div class="resume">
-                    <a href="https://drive.google.com/file/d/1U_of41SUweDr3hmlYyZM8kQNqSzU8-di/view?usp=sharing" class="resume-btn" target="_blank" rel="noopener noreferrer" @click="trackResumeClick">Roger's resume</a>
+                    <a href="https://drive.google.com/file/d/1E1TdoBPHa3c8a9A6oO0zhOApk65tictK/view?usp=sharing" class="resume-btn" target="_blank" rel="noopener noreferrer" @click="trackResumeClick">Roger's resume</a>
                 </div>
             </div>
         </div>

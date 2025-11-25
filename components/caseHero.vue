@@ -11,10 +11,10 @@
             <div class="case-hero__content">
                 <div class="case-hero__text">
                     <div class="case-hero__title">
-                        <img class="shadow" src="/public/images/reframe/Reframe_logo_w.svg" alt="" />
-                        <h1 class="shadow">Reframe</h1>
+                        <img class="textShadow" src="/public/images/reframe/Reframe_logo_w.svg" alt="" />
+                        <h1 class="textShadow">Reframe</h1>
                     </div>
-                    <p class="case-hero__subtitle shadow">一站式健身飲食控制整合App</p>
+                    <p class="case-hero__subtitle textShadow">一站式健身飲食控制整合App</p>
                 </div>
 
                 <div class="case-hero__mockup">
@@ -87,7 +87,7 @@
     }
 
     /* Hero Content  */
-    .shadow {
+    .textShadow {
         text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
     }
 

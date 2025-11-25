@@ -1,39 +1,25 @@
 <template>
-    <div class="page-wrapper">
-        <!-- 使用 components/Working.vue -->
-        <Working img-src="/images/working.svg" img-alt="working picture" title="網站建置中..." description="I'm currently building my portfolio website — Stay tuned." />
+    <div class="page-cafe-menu">
+        <!-- Header 已在 default layout 中提供 -->
+        <case-hero />
 
-        <div class="link-togo">
-            <!-- external link 開新分頁 -->
-            <a href="https://rogerjiang-portfolio-ux.webflow.io/project/coffee-shop-menu-design" target="_blank" rel="noopener noreferrer">前往 蒔在咖啡-菜單設計 查看作品</a>
-        </div>
+        <situation-section />
+
+        <action-section />
+
+        <result-section />
+
+        <!-- Footer 已在 default layout 中提供 -->
     </div>
 </template>
 
 <script setup>
-    import Working from "~/components/Working.vue";
+    import CaseHero from "~/components/caseHero-cafeMenu.vue";
+    import SituationSection from "~/components/SituationSection-cafeMenu.vue";
+    import ActionSection from "~/components/ActionSection-cafeMenu.vue";
+    import ResultSection from "~/components/ResultSection-cafeMenu.vue";
+
+    definePageMeta({
+        // 你可以在這加入 meta 等
+    });
 </script>
-
-<style scoped>
-    .page-wrapper {
-        display: flex;
-        flex-direction: column;
-        padding: 40px 20px;
-        align-items: center;
-    }
-
-    /* 你現有的 link 樣式 */
-    .link-togo {
-        width: 100%;
-        text-align: center;
-        margin-top: 40px;
-    }
-    .link-togo a {
-        color: var(--main-700);
-        font-family: var(--ff-sans);
-        font-size: var(--tw-p-size);
-        font-weight: var(--tw-p-weight);
-        line-height: var(--tw-p-lineheight);
-        text-decoration: underline;
-    }
-</style>
