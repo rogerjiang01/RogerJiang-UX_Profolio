@@ -17,8 +17,14 @@
             </div>
             <div class="persona-card-insight">
                 <h6 class="persona-insight">
-                    Insight：
-                    <span v-if="insight">{{ insight }}</span>
+                    <span v-if="insight">
+                        <strong>Insight：</strong>
+                        {{ insight }}
+                    </span>
+                    <span v-if="userStory">
+                        <strong>User Story：</strong>
+                        {{ userStory }}
+                    </span>
                 </h6>
             </div>
         </div>
@@ -32,6 +38,7 @@
         quote: { type: String, default: "" },
         quoteAuthor: { type: String, default: "" },
         insight: { type: String, default: "" },
+        userStory: { type: String, default: "" },
         imgSrc: { type: String, required: true },
         imgAlt: { type: String, default: "" },
         reverse: { type: Boolean, default: false },
